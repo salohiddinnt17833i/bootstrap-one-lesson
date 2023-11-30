@@ -1,0 +1,51 @@
+
+
+body
+{
+    background: #23253A;
+}
+
+section .block
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+section .block .item
+{
+    width: 351px;
+    height: 320px;
+    background: #2B2E41;
+    box-shadow: 40px 40px 40px 0px rgba(0, 0, 0, 0.25);
+    padding: 33px;
+    cursor: pointer;
+    transition: all .5s linear;
+}
+section .block .item:hover
+{
+    background-color: #23253A;
+}
+
+
+@media screen and (max-width: 1500px) {
+    .main
+    {
+        text-align: center;
+    }
+    .main .left img
+    {
+        display: none;
+    }
+}
+@media screen  and (max-width: 1300px){
+    section .block
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen  and (max-width: 950px){
+    section .block
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
